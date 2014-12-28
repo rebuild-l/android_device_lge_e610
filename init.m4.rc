@@ -3,16 +3,10 @@ import init.lge-shared.rc
 on fs
     mount_all fstab.m4
 
-    swapon_all fstab.m4
-
 on early-boot
     chmod 0777 /dev/input/event0
     chmod 0777 /dev/input/event5
     chmod 0777 /dev/input/event3
-
-on boot
-
-    write /proc/sys/vm/page-cluster 0
 
 on post-fs-data
 

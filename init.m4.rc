@@ -10,10 +10,6 @@ on early-boot
     chmod 0777 /dev/input/event5
     chmod 0777 /dev/input/event3
 
-on boot
-
-    write /proc/sys/vm/page-cluster 0
-
 on post-fs-data
 
     chown system system /sys/module/lge_emmc_direct_access/parameters/lcd_k_cal

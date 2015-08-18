@@ -1,3 +1,5 @@
 #
 # system.prop for e610
 #
+# Webkit
+persist.webview.provider=classic

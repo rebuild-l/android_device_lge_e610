@@ -18,4 +18,6 @@ BOARD_CUSTOM_GRAPHICS := ../../../device/lge/e610/recovery/graphics.c
 
 TARGET_USE_WEBKIT := 
 
+TARGET_KERNEL_SOURCE := kernel/lge/msm7x27a-common-l5
+
 TARGET_NO_SEPARATE_RECOVERY := true

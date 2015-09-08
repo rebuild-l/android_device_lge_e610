@@ -20,5 +20,5 @@
 /devices/platform/msm_sdcc.1/mmc_host/mmc1       auto vfat defaults                                wait,voldmanaged=sdcard1:auto
 /devices/platform/msm_hsusb_host                 auto auto defaults                                     voldmanaged=usbdisk:auto
 
-/dev/block/zram0                         none               swap    defaults                                zramsize=201326592
+/dev/block/zram0                         none               swap    defaults                                zramsize=268435456
 

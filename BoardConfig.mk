@@ -16,6 +16,4 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/e610/bluetooth
 
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/e610/recovery/graphics.c
 
-TARGET_USE_WEBKIT := 
-
 TARGET_NO_SEPARATE_RECOVERY := true

@@ -1,4 +1,5 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 OmniROM Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,24 +12,22 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# Boot animation
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit Omni GSM telephony parts
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/e610/full_e610.mk)
 
-TARGET_SCREEN_HEIGHT := 480
-TARGET_SCREEN_WIDTH := 320
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := e610
-PRODUCT_NAME := cm_e610
+PRODUCT_NAME := omni_e610
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-E610
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_CHARACTERISTICS := phone
+
+USE_SET_METADATA := false

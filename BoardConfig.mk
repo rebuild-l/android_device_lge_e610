@@ -14,6 +14,18 @@ TARGET_RECOVERY_FSTAB := device/lge/e610/fstab.m4
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/e610/bluetooth
 
-BOARD_CUSTOM_GRAPHICS := ../../../device/lge/e610/recovery/graphics.c
+#BOARD_CUSTOM_GRAPHICS := ../../../device/lge/e610/recovery/graphics.c
 
 TARGET_NO_SEPARATE_RECOVERY := true
+
+# TWRP
+DEVICE_RESOLUTION := 320x480
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_NO_REBOOT_BOOTLOADER := true
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_MAX_BRIGHTNESS := 255
